@@ -6,7 +6,7 @@
 #' @param featureFunctionList: a list of functions returned by generateFunctionList.
 #' @param test.data: a data.frame containing the data used for testing the model.
 #' @param threshold: an optional single numeric value that represents the threshold that should be applied during the prediction.
-#' @param positiveClass: a character vector of length one representing a string which specifies a positive example
+#' @param positveClass: a character vector of length one representing a string which specifies a positive example
 #'
 #' @export
 

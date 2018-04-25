@@ -17,7 +17,7 @@
 
 
 
-predict.WrappedCombiModel <- function(combinedModel , newdata , NAtoZero = F){
+predict.WrappedCombiModel <- function(combinedModel , newdata , NAtoZero = F , ...){
 
   #checking if all features are calculated or not, if all features are aviable the prediction is done based on the data otherwise the featrues are calculated
   if(! all( combinedModel$model$features %in% colnames(newdata) ) && !is.null(combinedModel[["funList"]])){

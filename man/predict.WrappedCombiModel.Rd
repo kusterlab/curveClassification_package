@@ -4,7 +4,7 @@
 \alias{predict.WrappedCombiModel}
 \title{predict.WrappedCombiModel}
 \usage{
-\method{predict}{WrappedCombiModel}(combinedModel, newdata, NAtoZero = F)
+\method{predict}{WrappedCombiModel}(combinedModel, newdata, NAtoZero = F, ...)
 }
 \arguments{
 \item{combinedModel:}{a model of class WrappedCombiModel.}

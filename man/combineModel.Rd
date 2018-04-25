@@ -16,7 +16,7 @@ combineModel(trainOutput, featureFunctionList, test.data = NULL,
 
 \item{threshold:}{an optional single numeric value that represents the threshold that should be applied during the prediction.}
 
-\item{positiveClass:}{a character vector of length one representing a string which specifies a positive example}
+\item{positveClass:}{a character vector of length one representing a string which specifies a positive example}
 }
 \description{
 This function combines the output from generateModel with other parameters to a model of class WrappedCombiModel.
