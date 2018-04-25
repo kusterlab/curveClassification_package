@@ -7,6 +7,7 @@ Maintainer: <yourself@somewhere.net>
 Description: To generate classifiers for curves.
 License: Tobeset
 Encoding: UTF-8
-Imports: mlr (== 2.12.1), caret(== 6.0-79)
+Imports: mlr, caret
+Suggest: randomForest
 LazyData: true
 RoxygenNote: 6.0.1

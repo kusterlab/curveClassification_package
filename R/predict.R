@@ -6,6 +6,11 @@
 #' @param newdata: a data.frame containing new data that should be predicted.
 #' @param NAtoZero: if TRUE, all observations that contain a NA in one of the features used by the model will be predicted with a probability of 0. If FALSE, for those observations NA is returned.
 #'
+#'
+#'
+#' @import mlr
+#' @import caret
+#'
 #' @export
 
 
