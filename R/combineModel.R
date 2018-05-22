@@ -11,14 +11,6 @@
 #' @export
 
 
-
-
-
-
-
-
-
-
 # function which generates a new list of functions
 combineModel <- function(trainOutput , featureFunctionList , test.data = NULL ,  threshold = NULL , positveClass = NULL){
 

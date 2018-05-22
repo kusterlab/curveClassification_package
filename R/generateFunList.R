@@ -12,7 +12,7 @@
 
 generateFunctionList <- function(functions = vector() , pattern = vector())
 {
-  # initialize a list of functions
+  # initialize a list for functions
   functionList <- list()
 
   if(length(functions) > 1 && length(pattern) == 1){
@@ -23,7 +23,7 @@ generateFunctionList <- function(functions = vector() , pattern = vector())
     stop("If you specifiy more than one pattern the number of patterns must match the number of functions")
 
   }
-  # for every function in functions and for every pattern a list entrie is generated
+  # for every function in functions and for every pattern a list entry is generated
   for(i in 1:length(functions)){
 
     npat <- pattern[i]
@@ -35,26 +35,10 @@ generateFunctionList <- function(functions = vector() , pattern = vector())
     # setting the pattern in the function
     formals(functionList[[paste(nfunc , npat ,sep = "_")]])[["pattern"]] <- npat
 
-
   }
-
 
   return(functionList)
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

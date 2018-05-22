@@ -32,7 +32,6 @@ removeInfinites <- function(data){
 #'
 #'
 
-
 evaluateFunList <- function(funList , data){
 
   #For every entrie in funList call the function on data
@@ -53,10 +52,6 @@ evaluateFunList <- function(funList , data){
 #'
 #' removes every row that contain at least one NA
 #'
-#'
-#'
-
-
 
 removeNAs <- function(data){
 
@@ -66,16 +61,12 @@ removeNAs <- function(data){
 }
 
 
-
-
 #Converts the class of a integer to numerical and form logical/characters to factors
 
 
 #' convertClass
 #'
 #' converts all columns to class factor or numeric
-#'
-#'
 #'
 
 
@@ -109,7 +100,6 @@ convertClass <- function(data){
 #'
 #'
 
-
 getThresholdCV <- function(resampleResult , train.data , tprThreshold = 0.99){
 
   thresholdVec <- vector(mode = "numeric" , length = length(resampleResult$models))
@@ -130,8 +120,6 @@ getThresholdCV <- function(resampleResult , train.data , tprThreshold = 0.99){
     threshold <- threshold[order(threshold$threshold , decreasing = T),]
 
     thresholdVec[n] <- threshold$threshold[1]
-
-
 
   }
 

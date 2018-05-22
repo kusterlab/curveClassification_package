@@ -17,18 +17,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 generateModel <- function(classifier , us.rate , features , data , targetVariable , positiveClass , hyperpars = list() , estimatingThreshold = F , tprThreshold = 0.995){
 
   #InitialTrainData to have it consistent with testdata

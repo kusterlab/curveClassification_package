@@ -3,7 +3,7 @@ Type: Package
 Title: CurveClassification
 Version: 0.1.0
 Author: Florian Seefried
-Maintainer: <yourself@somewhere.net>
+Maintainer: florian.seefried@tum.de
 Description: To generate classifiers for curves.
 License: Tobeset
 Encoding: UTF-8

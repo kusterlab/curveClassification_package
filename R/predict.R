@@ -7,19 +7,10 @@
 #' @param NAtoZero: if TRUE, all observations that contain a NA in one of the features used by the model will be predicted with a probability of 0. If FALSE, for those observations NA is returned.
 #'
 #'
-#'
 #' @import mlr
 #' @import caret
 #'
 #' @export
-
-
-
-
-
-
-
-
 
 
 predict.WrappedCombiModel <- function(combinedModel , newdata , NAtoZero = F , ...){
@@ -71,14 +62,8 @@ predict.WrappedCombiModel <- function(combinedModel , newdata , NAtoZero = F , .
     #TODO: think about this what happens if others than true or false are returned
     prediction$data[idx , "response"] <- FALSE
 
-
   }
 
-
-
   return(prediction)
-
-
-
 
 }

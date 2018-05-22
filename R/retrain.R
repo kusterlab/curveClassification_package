@@ -11,16 +11,6 @@
 #' @export
 
 
-
-
-
-
-
-
-
-
-
-
 retrain <- function(combinedModel , newdata , estimatingThreshold = F , tprThreshold = 0.995 , keepData = F){
 
   if(! all( combinedModel$model$features %in% colnames(newdata) ) && !is.null(combinedModel[["funList"]])){
@@ -36,7 +26,7 @@ retrain <- function(combinedModel , newdata , estimatingThreshold = F , tprThres
   }
 
 
-
+  #TODO: rewrite sampling that in case the data is replaced with the same dataset the order stays the same
   ntrain <- sample(1:nrow(newdata) , 0.8*nrow(newdata))
 
   #for test data the features are not subseted
@@ -52,15 +42,13 @@ retrain <- function(combinedModel , newdata , estimatingThreshold = F , tprThres
 
     combinedModel$data <- rbind(combinedModel$data , newdata[ , names(combinedModel$data) ])
 
-
   }else{
 
     combinedModel$data <-  newdata[ , names(combinedModel$data) ]
 
-
   }
 
-  newdata <- combinedModel$data[combinedModel$data$group == "train" ,c(combinedModel$model$features , combinedModel$model$task.desc$target)]
+  newdata <- combinedModel$data[combinedModel$data$group == "train" , c(combinedModel$model$features , combinedModel$model$task.desc$target)]
 
   newdata <- removeNAs( data = newdata )
 
