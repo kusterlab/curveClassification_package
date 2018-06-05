@@ -38,11 +38,18 @@ retrain <- function(combinedModel , newdata , estimatingThreshold = F , tprThres
   if(is.null(combinedModel$data)){
 
     combinedModel$data <- newdata
+
   }else if(keepData){
 
     combinedModel$data <- rbind(combinedModel$data , newdata[ , names(combinedModel$data) ])
 
   }else{
+
+    if(nrow(newdata) == nrow(combinedModel$data)){
+
+      newdata$group <- combinedModel$data$group
+
+    }
 
     combinedModel$data <-  newdata[ , names(combinedModel$data) ]
 
