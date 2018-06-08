@@ -3,11 +3,12 @@ Type: Package
 Title: CurveClassification
 Version: 0.1.0
 Author: Florian Seefried
-Maintainer: florian.seefried@tum.de
+Maintainer: Florian Seefried <florian.seefried@tum.de>
 Description: To generate classifiers for curves.
-License: Tobeset
+License: GPL-3
 Encoding: UTF-8
 Imports: mlr, caret
 Suggest: randomForest
 LazyData: true
 RoxygenNote: 6.0.1
+

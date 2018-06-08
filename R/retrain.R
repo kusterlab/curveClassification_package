@@ -47,6 +47,8 @@ retrain <- function(combinedModel , newdata , estimatingThreshold = F , tprThres
 
     if(nrow(newdata) == nrow(combinedModel$data)){
 
+      newdata <- newdata[rownames(combinedModel$data) , ]
+
       newdata$group <- combinedModel$data$group
 
     }
