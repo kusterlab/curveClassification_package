@@ -104,7 +104,7 @@ getThresholdCV <- function(resampleResult , train.data , tprThreshold = 0.99){
 
   thresholdVec <- vector(mode = "numeric" , length = length(resampleResult$models))
 
-  #Change this to a biniary search and fix it
+  #TODO: Change this to a biniary search and fix it
   for(n in 1:length(resampleResult$models)){
 
     model <- resampleResult$models[[n]]
