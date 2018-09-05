@@ -5,7 +5,7 @@ Version: 0.1.0
 Author: Florian Seefried
 Maintainer: Florian Seefried <florian.seefried@tum.de>
 Description: To generate classifiers for curves.
-License: GPL-2
+License: GPL-3
 Encoding: UTF-8
 Imports: mlr (>= 2.11), caret (>= 6.0-78), randomForest
 LazyData: true
