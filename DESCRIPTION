@@ -7,7 +7,7 @@ Maintainer: Florian Seefried <florian.seefried@tum.de>
 Description: To generate classifiers for curves.
 License: GPL-2
 Encoding: UTF-8
-Imports: mlr, caret
+Depends: mlr (>= 2.11), caret (>= 6.0-78)
 Suggest: randomForest
 LazyData: true
 RoxygenNote: 6.0.1
